@@ -1,0 +1,7 @@
+.*.swp
+*~
+
+*.pyc
+
+arrayequal.egg-info/
+dist/
