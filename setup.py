@@ -8,5 +8,5 @@ setup(
     url = '',
     packages = ['arrayequal',],
     install_requires = 'numpy',
-    provides = ['arrayequal (0.0.0)'],
+    provides = ['arrayequal (0.0.1)'],
 )

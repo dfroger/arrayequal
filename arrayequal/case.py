@@ -14,15 +14,19 @@ class NumTestCase(unittest.TestCase):
         unittest.TestCase.__init__(self, *args, **kwargs)
         self.addTypeEqualityFunc(np.ndarray, 'assertArrayEqual')
 
-    def _compare_arrays(self,a1,a2,comparer,msg):
+    def _compare_arrays(self,a1,a2,comparer,msg,astype=None):
+        if astype:
+            a1 = np.array(a1, astype)
+            a2 = np.array(a2, astype)
         try:
             comparer(a1, a2)
         except AssertionError as e: 
             standardMsg = str(e)
             self.fail(self._formatMessage(msg, standardMsg))
 
-    def assertArrayEqual(self, a1, a2, msg=None):
+    def assertArrayEqual(self, a1, a2, msg=None, astype=None):
         self._compare_arrays(a1,a2,_exact_comparer,msg)
 
-    def assertArrayAlmostEqual(self,a1,a2,comparer=_almost_comparer,msg=None):
+    def assertArrayAlmostEqual(self, a1, a2, comparer=_almost_comparer,
+                               msg=None, astype=None):
         self._compare_arrays(a1,a2,comparer,msg)
