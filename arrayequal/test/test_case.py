@@ -44,8 +44,11 @@ class TestNumTestCase(NumTestCase):
         a2 = np.array( [10,20,30] )
         self.assertArrayAlmostEqual(a1,a2,comparer=LyingArrayComparer())
 
-    def test_astype(self):
-        self.assertEqual([1,2,3], [1,2,3], astype='i8')
+    def test_ArrayEqual_astype(self):
+        self.assertArrayEqual([1,2,3], [1,2,3], astype='i8')
+
+    def test_ArrayAlmostEqual_astype(self):
+        self.assertArrayAlmostEqual([1,2,3], [1,2,3], astype='i8')
 
 if __name__ == '__main__':
     unittest.main()

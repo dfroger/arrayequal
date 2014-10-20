@@ -25,8 +25,8 @@ class NumTestCase(unittest.TestCase):
             self.fail(self._formatMessage(msg, standardMsg))
 
     def assertArrayEqual(self, a1, a2, msg=None, astype=None):
-        self._compare_arrays(a1,a2,_exact_comparer,msg)
+        self._compare_arrays(a1,a2,_exact_comparer,msg,astype=astype)
 
     def assertArrayAlmostEqual(self, a1, a2, comparer=_almost_comparer,
                                msg=None, astype=None):
-        self._compare_arrays(a1,a2,comparer,msg)
+        self._compare_arrays(a1,a2,comparer,msg,astype=astype)
