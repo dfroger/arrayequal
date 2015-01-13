@@ -3,10 +3,8 @@ import unittest
 
 import  numpy as np
 
-import sys
-sys.path.append('..')
-from case import NumTestCase
-from comparer import ArrayComparer
+from arrayequal.case import NumTestCase
+from arrayequal.comparer import ArrayComparer
 
 ZERO,ONE = 0., 1.
 PICO,TERA = 1E-12, 1E+12
