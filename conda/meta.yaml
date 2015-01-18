@@ -1,0 +1,33 @@
+package:
+  name: arrayequal
+  version: 0.0.4
+
+source:
+  fn: 0.0.4.tar.gz
+  url: https://github.com/dfroger/arrayequal/archive/0.0.4.tar.gz
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python 2.7*
+    - setuptools
+    - numpy
+  run:
+    - python 2.7*
+    - numpy
+
+test:
+  files:
+    - ../arrayequal/test/test_case.py
+    - ../arrayequal/test/test_comparer.py
+  requires:
+    - python 2.7*
+  commands:
+    - python test_case.py
+    - python test_comparer.py
+
+about:
+  home: https://github.com/dfroger/arrayequal
+  license: GPL
