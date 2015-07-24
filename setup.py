@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name = 'arrayequal',
+    name = 'simudiff',
     version = '0.0.4',
-    description = 'test for numpy array equality with unittest support',
+    description = 'Compare numerical simulation results',
     author= 'David Froger',
     author_email = 'david.froger@inria.fr',
     url = '',
-    packages = ['arrayequal',],
+    packages = ['simudiff',],
     install_requires = 'numpy',
-    provides = ['arrayequal (0.0.4)'],
+    provides = ['simudiff (0.0.4)'],
 )

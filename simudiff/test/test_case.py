@@ -3,8 +3,8 @@ import unittest
 
 import  numpy as np
 
-from arrayequal.case import NumTestCase
-from arrayequal.comparer import ArrayComparer
+from simudiff.case import NumTestCase
+from simudiff.comparer import ArrayComparer
 
 ZERO,ONE = 0., 1.
 PICO,TERA = 1E-12, 1E+12

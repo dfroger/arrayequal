@@ -3,7 +3,7 @@ import unittest
 
 import numpy as np
 
-from arrayequal.comparer import SymetricArrayComparer, ExactArrayComparer
+from simudiff.comparer import SymetricArrayComparer, ExactArrayComparer
 
 ZERO,ONE = 0., 1.
 PICO,TERA = 1E-12, 1E+12
