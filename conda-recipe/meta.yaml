@@ -3,8 +3,9 @@ package:
   version: 0.0.4
 
 source:
-  fn: 0.0.4.tar.gz
-  url: https://github.com/dfroger/simudiff/archive/0.0.4.tar.gz
+  path: ..
+  #fn: 0.0.4.tar.gz
+  #url: https://github.com/dfroger/simudiff/archive/0.0.4.tar.gz
 
 build:
   number: 0
