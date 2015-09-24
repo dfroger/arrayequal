@@ -1,11 +1,11 @@
 package:
-  name: simudiff
+  name: arrayequal
   version: 0.0.4
 
 source:
   path: ..
   #fn: 0.0.4.tar.gz
-  #url: https://github.com/dfroger/simudiff/archive/0.0.4.tar.gz
+  #url: https://github.com/dfroger/arrayequal/archive/0.0.4.tar.gz
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
 
 test:
   files:
-    - ../simudiff/test/test_case.py
-    - ../simudiff/test/test_comparer.py
+    - ../arrayequal/test/test_case.py
+    - ../arrayequal/test/test_comparer.py
   requires:
     - python 2.7*
   commands:
@@ -30,5 +30,5 @@ test:
     - python test_comparer.py
 
 about:
-  home: https://github.com/dfroger/simudiff
+  home: https://github.com/dfroger/arrayequal
   license: GPL

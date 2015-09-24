@@ -1,4 +1,4 @@
-simudiff
+ArrayEqual
 ==========
 
-Compare numerical simulation results.
+Test for numpy array equality
