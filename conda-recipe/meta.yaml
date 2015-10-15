@@ -1,22 +1,21 @@
 package:
   name: arrayequal
-  version: 0.0.4
+  version: 0.1.0
 
 source:
-  path: ..
-  #fn: 0.0.4.tar.gz
-  #url: https://github.com/dfroger/arrayequal/archive/0.0.4.tar.gz
+  fn: 0.1.0.tar.gz
+  url: https://github.com/dfroger/arrayequal/archive/0.1.0.tar.gz
 
 build:
   number: 0
 
 requirements:
   build:
-    - python 2.7*
+    - python
     - setuptools
     - numpy
   run:
-    - python 2.7*
+    - python
     - numpy
 
 test:
@@ -24,7 +23,7 @@ test:
     - ../arrayequal/test/test_case.py
     - ../arrayequal/test/test_comparer.py
   requires:
-    - python 2.7*
+    - python
   commands:
     - python test_case.py
     - python test_comparer.py
@@ -32,3 +31,4 @@ test:
 about:
   home: https://github.com/dfroger/arrayequal
   license: GPL
+  summary: Test for numpy array equality
