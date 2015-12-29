@@ -3,7 +3,7 @@ import unittest
 
 import numpy as np
 
-import comparer
+from . import comparer
 
 _exact_comparer = comparer.ExactArrayComparer()
 _almost_comparer = comparer.SymetricArrayComparer()

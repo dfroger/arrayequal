@@ -7,22 +7,22 @@ class ArrayComparer(object):
 
         # Check type.
         if not isinstance(a1, np.ndarray):
-            raise AssertionError, 'First argument is not a numpy array'
+            raise AssertionError('First argument is not a numpy array')
         if not isinstance(a2, np.ndarray):
-            raise AssertionError, 'Second argument is not a numpy array'
+            raise AssertionError('Second argument is not a numpy array')
 
         # Check shape.
         s1 = a1.shape
         s2 = a2.shape
         if s1 != s2:
-            raise AssertionError,'arrays have different shapes: %r != %r' % (s1,s2,)
+            raise AssertionError('arrays have different shapes: %r != %r' % (s1,s2,))
 
         # Check dtype
         dt1 = a1.dtype
         dt2 = a2.dtype
         if dt1 != dt2:
-            raise AssertionError,'arrays have different data type: %r != %r' \
-                    % (dt1,dt2,)
+            raise AssertionError('arrays have different data type: %r != %r' \
+                    % (dt1,dt2,))
 
         are_equal = self.are_equal(a1,a2)
         are_different = np.logical_not(are_equal) 
@@ -43,7 +43,7 @@ class ArrayComparer(object):
                 msg = 'arrays have %i different value(s) with first at %s are: %r != %r' \
                     % (ndiff,idx[0],diff1[0],diff2[0])
 
-            raise AssertionError, msg
+            raise AssertionError(msg)
 
 class ExactArrayComparer(ArrayComparer):
 

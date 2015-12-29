@@ -1,2 +1,2 @@
-from comparer import ArrayComparer, ExactArrayComparer, SymetricArrayComparer
-from case import NumTestCase
+from .comparer import ArrayComparer, ExactArrayComparer, SymetricArrayComparer
+from .case import NumTestCase
